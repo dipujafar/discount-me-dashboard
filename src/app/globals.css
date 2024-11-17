@@ -132,3 +132,7 @@ body {
 .ant-table-filter-dropdown-btns > .ant-btn {
   color: #fff !important;
 }
+
+.ant-tabs-tab-active {
+  border-bottom: #ff0000 !important;
+}

@@ -12,6 +12,7 @@ import { IoEyeOutline } from "react-icons/io5";
 import { LiaUserTimesSolid } from "react-icons/lia";
 import UserModal from "./UserModal";
 import { useState } from "react";
+import { ArrowDownWideNarrowIcon } from "lucide-react";
 
 const confirm: PopconfirmProps["onConfirm"] = (e) => {
   console.log(e);
@@ -57,6 +58,33 @@ const UserMangementContainer = () => {
     {
       title: "Account Type",
       dataIndex: "accountType",
+
+      filters: [
+        {
+          text: "User",
+          value: "User",
+        },
+        {
+          text: "Vendor",
+          value: "vendor",
+        },
+        {
+          text: "Rider",
+          value: "rider",
+        },
+        {
+          text: "Broker",
+          value: "broker",
+        },
+      ],
+      filterIcon: () => (
+        <ArrowDownWideNarrowIcon
+          color="#fff"
+          className="flex justify-start items-start"
+        />
+      ),
+      onFilter: (value, record) =>
+        record.accountType.indexOf(value as string) === 0,
     },
     {
       title: "Action",

@@ -29,10 +29,12 @@ const CouponCard = ({ data }: { data: TProps }) => {
           className="hidden xl:block"
         ></Image>
         <div>
-          <h2 className="text-primary-black lg:text-xl font-bold">
+          <h2 className="text-primary-black lg:text-xl font-bold text-center lg:text-start">
             {data?.title}
           </h2>
-          <p className="text-primary-black/70 ">${data?.description}</p>
+          <p className="text-primary-black/70 text-center lg:text-start">
+            ${data?.description}
+          </p>
         </div>
       </div>
     </div>
