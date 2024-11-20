@@ -37,7 +37,7 @@ const ProductSellChart = () => {
   };
 
   return (
-    <div className="bg-primary-green  rounded-lg p-8 w-full md:w-1/2">
+    <div className="bg-primary-green  rounded-lg p-8 w-full xl:w-1/2">
       <div className="text-parimaryWhite flex lg:flex-wrap xl:flex-nowrap justify-between items-center mb-10 gap-2">
         <h1 className="text-xl">User Overview</h1>
         <h1 className="">

@@ -77,7 +77,7 @@ const RecentUser = () => {
           style={{ overflowX: "auto" }}
           columns={columns}
           dataSource={data}
-          scroll={{ x: "100%" }}
+          scroll={{ x: "max-content" }}
         ></Table>
       </div>
     </>

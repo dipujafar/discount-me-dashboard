@@ -116,7 +116,7 @@ const UserMangementContainer = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between py-4">
+      <div className="flex flex-col lg:flex-row gap-y-2 items-center justify-between py-4">
         <h1 className="text-2xl font-bold w-full text-primary-white">
           User Management
         </h1>
@@ -131,6 +131,8 @@ const UserMangementContainer = () => {
       <Table
         columns={columns}
         dataSource={data}
+        style={{ overflowX: "auto" }}
+        scroll={{ x: "max-content" }}
         pagination={{ pageSize: 10, responsive: true }}
       ></Table>
       <UserModal open={open} setOpen={setOpen}></UserModal>

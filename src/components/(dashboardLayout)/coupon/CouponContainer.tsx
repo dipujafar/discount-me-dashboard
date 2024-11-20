@@ -24,7 +24,7 @@ const CouponContainer = () => {
       </Button>
 
       {/* role base coupon  */}
-      <div className="mt-10 flex justify-between gap-x-5">
+      <div className="mt-10 flex flex-col lg:flex-row justify-between gap-x-5">
         <div className="flex-1">
           <h2 className=" text-primary-white text-xl font-bold">User Coupon</h2>
           {/* coupon card */}

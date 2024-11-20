@@ -61,7 +61,7 @@ const EarningContainer = () => {
 
   return (
     <div>
-      <div className="flex items-center py-4 gap-10">
+      <div className="flex flex-col lg:flex-row gap-y-3 items-center py-4 gap-x-10">
         <h1 className="text-2xl font-bold text-primary-white">Earnings</h1>
         <>
           <div className="flex items-center gap-x-6 p-3 bg-primary-orange rounded-lg text-white">
@@ -83,6 +83,7 @@ const EarningContainer = () => {
       <Table
         columns={columns}
         dataSource={data}
+        scroll={{ x: "max-content" }}
         pagination={{ pageSize: 10, responsive: true }}
       ></Table>
       <EaringDetaisModal open={open} setOpen={setOpen}></EaringDetaisModal>

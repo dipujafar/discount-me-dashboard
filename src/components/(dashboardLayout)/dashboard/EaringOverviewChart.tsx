@@ -35,7 +35,7 @@ const EaringOverviewChart = () => {
   };
 
   return (
-    <div className="bg-primary-green  rounded-lg p-8 w-1/2">
+    <div className="bg-primary-green  rounded-lg p-8 xl:w-1/2">
       <div className="text-parimaryWhite flex justify-between items-center mb-10">
         <h1 className="text-xl">Earning Overview</h1>
         <h1 className="">
